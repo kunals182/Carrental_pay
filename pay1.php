@@ -281,20 +281,20 @@ foreach($results as $result)
             <label for="name">Name on Card</label>
             <input type="text" id="cname" name="cardname" placeholder="Card Holder Name" required>
             <label for="card">Card number</label>
-            <input type="text" id="cnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <input type="text" id="cnum" name="cardnumber" placeholder="Enter your card number" required>
             <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Enter expmonth" required>
             <div class="row">
               <div class="col-50">
                 <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                <input type="text" id="expyear" name="expyear" placeholder="Enter your expyear" required>
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter cvv code hare" required>
               </div>
 			  <div class="col-50">
-                <label for="amount">SAR</label>
+                <label for="amount">Rs</label>
                 <input type="text" id="amount" name="amount" value="<?php echo htmlentities($result->totalamt);?>" placeholder="000" required readonly>
               </div>
             </div>

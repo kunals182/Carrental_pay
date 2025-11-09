@@ -97,7 +97,7 @@ $msg="Page data updated  successfully";
 										<th>#</th>
 												<th>Customer Name</th>
 											<th>Card no</th>
-										<th>Amount (SAR)</th>
+										<th>Amount (Rs)</th>
 										<th>Status</th>
 										
 										</tr>
@@ -108,7 +108,7 @@ $msg="Page data updated  successfully";
 											<th> Name</th>
 											
 											<th>Card no</th>
-										<th>Amount (SAR)</th>
+										<th>Amount (Rs)</th>
 										<th>Status</th>
 										</tr>
 										</tr>

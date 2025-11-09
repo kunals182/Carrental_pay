@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2022 at 03:26 PM
+-- Generation Time: Dec 18, 2022 at 02:14 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
@@ -97,7 +97,8 @@ CREATE TABLE `tblbooking` (
 INSERT INTO `tblbooking` (`id`, `userEmail`, `VehicleId`, `FromDate`, `message`, `Status`, `PostingDate`, `name`, `address`, `members`, `days`, `totalamt`) VALUES
 (18, 'customer@gmail.com', 6, '2022-03-23', 'holiday trip', 0, '2022-03-21 13:26:55', 'mohamed', 'damam', 5, 5, '500'),
 (19, 'customer@gmail.com', 6, '2022-03-22', 'holidays', 0, '2022-03-21 13:41:15', 'mohamed', 'damam', 5, 15, '1500'),
-(20, 'customer@gmail.com', 6, '2022-03-24', 'holiday trip', 0, '2022-03-21 13:59:52', 'mohamed', 'damam', 5, 15, '1500');
+(20, 'customer@gmail.com', 6, '2022-03-24', 'holiday trip', 0, '2022-03-21 13:59:52', 'mohamed', 'damam', 5, 15, '1500'),
+(21, 'customer@gmail.com', 14, '2022-12-08', 's', 0, '2022-12-12 09:20:53', 'customer', 'asd', 2, 2, '200');
 
 -- --------------------------------------------------------
 
@@ -209,6 +210,29 @@ CREATE TABLE `tblsubscribers` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbltestimonial`
+--
+
+CREATE TABLE `tbltestimonial` (
+  `id` int(11) NOT NULL,
+  `UserEmail` varchar(100) NOT NULL,
+  `Testimonial` mediumtext NOT NULL,
+  `PostingDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbltestimonial`
+--
+
+INSERT INTO `tbltestimonial` (`id`, `UserEmail`, `Testimonial`, `PostingDate`, `status`) VALUES
+(1, 'test@gmail.com', 'Test Test', '2022-06-18 02:14:31', 1),
+(2, 'test@gmail.com', '\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilis', '2022-06-18 02:16:05', 1),
+(3, 'test@gmail.com', 'good', '2022-12-18 13:08:11', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tblusers`
 --
 
@@ -232,7 +256,8 @@ CREATE TABLE `tblusers` (
 
 INSERT INTO `tblusers` (`id`, `FullName`, `EmailId`, `Password`, `ContactNo`, `dob`, `Address`, `City`, `Country`, `RegDate`, `UpdationDate`) VALUES
 (11, 'customer', 'customer@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b', '99887766', NULL, NULL, NULL, NULL, '2022-03-16 07:42:30', NULL),
-(12, 'abdull', 'abdulaa@gmail.com', '098f6bcd4621d373cade4e832627b4f6', '9090909090', NULL, NULL, NULL, NULL, '2022-03-21 06:51:34', NULL);
+(12, 'abdull', 'abdulaa@gmail.com', '098f6bcd4621d373cade4e832627b4f6', '9090909090', NULL, NULL, NULL, NULL, '2022-03-21 06:51:34', NULL),
+(13, 'test', 'test@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '9988776655', NULL, NULL, NULL, NULL, '2022-12-18 13:03:12', NULL);
 
 -- --------------------------------------------------------
 
@@ -338,6 +363,12 @@ ALTER TABLE `tblsubscribers`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbltestimonial`
+--
+ALTER TABLE `tbltestimonial`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tblusers`
 --
 ALTER TABLE `tblusers`
@@ -369,7 +400,7 @@ ALTER TABLE `payment`
 -- AUTO_INCREMENT for table `tblbooking`
 --
 ALTER TABLE `tblbooking`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `tblbrands`
@@ -402,10 +433,16 @@ ALTER TABLE `tblsubscribers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `tbltestimonial`
+--
+ALTER TABLE `tbltestimonial`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `tblusers`
 --
 ALTER TABLE `tblusers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `tblvehicles`

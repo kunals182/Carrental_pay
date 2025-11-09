@@ -156,7 +156,7 @@ $_SESSION['brndid']=$result->bid;
       </div>
       <div class="col-md-3">
         <div class="price_info">
-          <p>SAR <?php echo htmlentities($result->PricePerDay);?> </p>per Day
+          <p>Rs <?php echo htmlentities($result->PricePerDay);?> </p>per Day
          
         </div>
       </div>
@@ -402,8 +402,8 @@ $_SESSION['brndid']=$result->bid;
 			
 		   </div>
 		   <div class="form-group">
-			<label>Amount (SAR)</label>
-              <input type="text" class="form-control" name="totamt"  id="totamt" placeholder="Total Amount (SAR)"  readonly>
+			<label>Amount (Rs)</label>
+              <input type="text" class="form-control" name="totamt"  id="totamt" placeholder="Total Amount (Rs)"  readonly>
 			  
             </div>
 
@@ -466,7 +466,7 @@ foreach($results as $result)
             </div>
             <div class="product-listing-content">
               <h5><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h5>
-              <p class="list-price">SAR:<?php echo htmlentities($result->PricePerDay);?></p>
+              <p class="list-price">Rs:<?php echo htmlentities($result->PricePerDay);?></p>
           
               <ul class="features_list">
                 

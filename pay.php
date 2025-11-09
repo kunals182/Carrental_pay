@@ -220,7 +220,7 @@ span.price {
             <label for="name">Name on Card</label>
             <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
             <label for="card">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="Enter your card number" required>
             <label for="expmonth">Exp Month</label>
             <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
             <div class="row">
