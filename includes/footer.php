@@ -79,7 +79,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
           </div>
         </div>
         <div class="col-md-6 col-md-pull-6">
-          <p class="copy-right">Copyright &copy; 2022 Car Rental Management System. All Rights Reserved</p>
+          <p class="copy-right">Copyright &copy; 2024 Car Rental Management System. All Rights Reserved</p>
         </div>
       </div>
     </div>
